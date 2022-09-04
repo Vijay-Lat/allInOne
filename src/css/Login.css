@@ -1,0 +1,65 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/2292837/pexels-photo-2292837.jpeg?cs=srgb&dl=pexels-ekrulila-2292837.jpg&fm=jpg');
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.loginBox {
+    margin-bottom: 2rem;
+}
+
+.appBar {
+    margin-bottom: 100px !important;
+}
+
+.tab {
+    text-transform: none !important;
+    color: #fff !important;
+    margin-left: auto !important;
+}
+
+.inputStyle {
+    width: 100%;
+    margin-bottom: 20px !important;
+
+}
+
+.loginCard {
+    width: 20rem;
+    height: auto !important;
+    position: relative;
+    top: 18rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    padding: 2rem;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginButton {
+    margin-top: 2rem !important;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: white;
+    border: none;
+    text-transform: none !important;
+}
+
+.loginTitle {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.tabs {
+    margin-left: auto !important;
+}

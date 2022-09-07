@@ -13,7 +13,7 @@ function App() {
             key={route?.id}
           />
         ))}
-        <Route exact path = "/" element={<Navigate to="/blue-green/login"/>}/>
+        {/* <Route exact path = "/" element={<Navigate to="/blue-green/login"/>}/> */}
       </Routes>
     </Fragment>
   );

@@ -1,3 +1,4 @@
+import GraphLines from "../pages/GraphLines";
 import HomePage from "../pages/HomePage";
 import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
@@ -13,6 +14,11 @@ export const routes = [
       path: "/home-page/*",
       component: HomePage,
       id:1,
+    },
+    {
+      path: "/",
+      component: GraphLines,
+      id:2,
     },
     // {
     //   path: "/register",

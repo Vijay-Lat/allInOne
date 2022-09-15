@@ -1,3 +1,5 @@
+import DoubleDthree from "../pages/DoubleDthree";
+import DthreeChart from "../pages/DthreeChart";
 import GraphLines from "../pages/GraphLines";
 import HomePage from "../pages/HomePage";
 import LandingPage from "../pages/LandingPage";
@@ -17,7 +19,7 @@ export const routes = [
     },
     {
       path: "/",
-      component: GraphLines,
+      component: DoubleDthree,
       id:2,
     },
     // {

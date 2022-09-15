@@ -35,7 +35,6 @@ const GraphLines = () => {
   return (
     <div>
       <svg ref={lineGraphRef}>
-        {/* <path transform="translate(50,50)" d={curvePath}></path> */}
       </svg>
     </div>
   );

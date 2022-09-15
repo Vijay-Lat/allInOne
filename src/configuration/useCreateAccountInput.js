@@ -29,7 +29,7 @@ const useCreateAccountInput = () => {
     onChange: emailChangeHandler,
     onBlur: emailBlurHandler,
     hasError: emailError,
-    reset: emailReset,
+  reset: emailReset,
     setError: setEmailError,
   } = useInput();
   const {

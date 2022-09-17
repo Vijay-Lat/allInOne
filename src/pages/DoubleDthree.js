@@ -244,6 +244,21 @@ const DoubleDthree = () => {
       .attr("transform", "rotate(-90)")
       .attr("fill", "#000");
   };
-  return <div ref={graphRef}></div>;
+  const getClassName = (inval)=>{
+    const classNameSetter = new Map()
+    classNameSetter.set("1","colorVar")
+    classNameSetter.set("1","colorVar")
+    classNameSetter.set("1","colorVar")
+    classNameSetter.set("1","colorVar")
+
+    const classNameGetter = classNameSetter.get(inval)
+    return classNameGetter
+  }
+  // return <div ref={graphRef}></div>;
+  return (
+    <div className={getClassName("1")}>
+      Hello world
+    </div>
+  )
 };
 export default DoubleDthree;

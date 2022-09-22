@@ -82,21 +82,30 @@ console.log(grpval,"colorlEs")
 
 const indianNames = ["neela","lakshmi","santhi","LATHA","manjula",null,undefined,"manjula"]
 const isValid = val => !_.isUndefined(val) && !_.isNull(val)
-const chainedReaction = _.chain(indianNames).filter(isValid).map(s=>s.replace(/[a]/i,"A")).uniq().map(_.startCase).sort().value()
+const chainedReaction = _.chain(indianNames).filter(isValid).map(s=>s.replace(/[t]/i,"T")).uniq().map(_.startCase).sort().value()
 console.log(chainedReaction,"chainedReaction")
 
 // recursion
 
 const recursionAdd = (n)=>{
-if(_.isNull(n) || _.isUndefined(n) || n<0){
+if(_.isNull(n) || _.isUndefined(n) || n<=0){
     console.log("Finished")
     return false
 }
-console.log(n,"add")
+console.log("#"+n,"add")
 recursionAdd(n-1)
 }
 recursionAdd(100)
 
+const explode = str => str.split(/\s+/)
+const count = arr => arr?.length
+
+const countWords = R.compose(count,explode)
+
+// const countWords = R.compose(explode,count) // this won't work second function should be used first like mentioned above
+let str = "Life is a beautiful thing never betray anybody and don't break someone's trust"
+const ans = countWords(str)
+console.log(ans,"ans")
 
   return (
     <div>

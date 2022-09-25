@@ -107,6 +107,14 @@ let str = "Life is a beautiful thing never betray anybody and don't break someon
 const ans = countWords(str)
 console.log(ans,"ans")
 
+let methodExecution ={
+  checkFun:()=>{
+    console.log("Checked")
+  }
+}
+
+methodExecution["checkFun"]()
+
   return (
     <div>
       <TextField

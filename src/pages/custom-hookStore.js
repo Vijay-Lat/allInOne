@@ -10,7 +10,7 @@ const useStore = () => {
     listeners.push(setstate);
 
     return () => {
-        // clean up function to remove the previous setState
+      // clean up function to remove the previous setState
       listeners = listeners?.filter((li) => li !== setstate);
     };
   }, [setstate]);

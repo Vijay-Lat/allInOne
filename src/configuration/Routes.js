@@ -3,7 +3,8 @@ import DthreeChart from "../pages/DthreeChart";
 import GraphLines from "../pages/GraphLines";
 import HomePage from "../pages/HomePage";
 import LandingPage from "../pages/LandingPage";
-import LodashLearn from "../pages/LodashLearn";
+import TestCustomStore from "../pages/TestCustomStore";
+// import LodashLearn from "../pages/LodashLearn";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 
@@ -19,8 +20,8 @@ export const routes = [
       id:1,
     },
     {
-      path: "/hello",
-      component: LodashLearn,
+      path: "/",
+      component: TestCustomStore,
       id:2,
     },
     // {

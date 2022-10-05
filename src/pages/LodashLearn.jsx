@@ -156,23 +156,24 @@ const LodashLearn = () => {
   // methodExecution["checkFun"]()
   methodExecution.checkFun();
 
-  console.log(typeof null, "neeee");
-  console.log(typeof undefined, "undef");
 
-  const customStoreHandler = () => {
-    dispatchFn("addArray",userName);
+  const customStoreUserHandler = () => {
+    dispatchFn("addUsers",userName);
   };
+
+  const customStoreToggleHandler = ()=>{
+    dispatchFn("showCard")
+  }
 
   return (
     <div>
-      <h1>Helooooooooooooo</h1>
       {stateVal?.show && <h1>Visible</h1>}
-      <Button onClick={customStoreHandler}>Show Custom Store</Button>
+      <Button onClick={customStoreUserHandler}>Show Custom Store</Button>
+      <Button onClick={customStoreUserHandler}>Add users</Button>
       <TextField
         value={userName}
         onChange={(e) => setUserName(e.target.value)}
       />
-      <Button onClick={getPlayerStats}>Get</Button>
     </div>
   );
 };

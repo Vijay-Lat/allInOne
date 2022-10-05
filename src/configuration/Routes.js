@@ -19,7 +19,7 @@ export const routes = [
       id:1,
     },
     {
-      path: "/",
+      path: "/hello",
       component: LodashLearn,
       id:2,
     },

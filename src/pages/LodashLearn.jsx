@@ -168,7 +168,7 @@ const LodashLearn = () => {
   return (
     <div>
       {stateVal?.show && <h1>Visible</h1>}
-      <Button onClick={customStoreUserHandler}>Show Custom Store</Button>
+      <Button onClick={customStoreToggleHandler}>Show Custom Store</Button>
       <Button onClick={customStoreUserHandler}>Add users</Button>
       <TextField
         value={userName}

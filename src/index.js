@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import combineActions from './pages/combineActions';
 
-combineActions()
+combineActions() // initiate the custom hook store
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
